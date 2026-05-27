@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='url(%23g)'/><path d='M16 7v18M7 16h18' stroke='%23fff' stroke-width='2.5' stroke-linecap='round'/><defs><linearGradient id='g' x1='0' y1='0' x2='32' y2='32' gradientUnits='userSpaceOnUse'><stop offset='0%25' stop-color='%230ea5e9'/><stop offset='100%25' stop-color='%2310b981'/></linearGradient></defs></svg>">
+  <link rel="icon" href="favicon.png" type="image/png">
   <title>MedSync – Connected Health | O Futuro do Pronto Atendimento</title>
   <meta name="description" content="MedSync conecta paciente, dados e cuidado em tempo real. Elimine filas, ganhe dignidade e transforme a experiência do pronto atendimento com tecnologia de ponta.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,24 +37,7 @@
   <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo" aria-label="MedSync Home">
-        <span class="nav__logo-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
-            <path d="M16 7v18M7 16h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="16" cy="16" r="4" fill="url(#logo-grad2)" opacity="0.9"/>
-            <defs>
-              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#0ea5e9"/>
-                <stop offset="100%" stop-color="#10b981"/>
-              </linearGradient>
-              <linearGradient id="logo-grad2" x1="12" y1="12" x2="20" y2="20" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#38bdf8"/>
-                <stop offset="100%" stop-color="#34d399"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </span>
-        <span class="nav__logo-text">MedSync</span>
+        <img src="logo.png" alt="MedSync" class="nav__logo-img">
       </a>
 
       <ul class="nav__links" role="list">
@@ -63,7 +46,7 @@
         <li><a href="#benefits" class="nav__link">Benefícios</a></li>
       </ul>
 
-      <a href="#download" class="btn btn--nav" id="nav-cta">Baixar App</a>
+      <a href="https://medsync-olive.vercel.app/" target="_blank" class="btn btn--nav" id="nav-cta">Acessar o App</a>
 
       <button class="nav__burger" id="nav-burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-mobile">
         <span></span><span></span><span></span>
@@ -76,7 +59,7 @@
         <li><a href="#how-it-works" class="nav__link">Como Funciona</a></li>
         <li><a href="#features" class="nav__link">Funcionalidades</a></li>
         <li><a href="#benefits" class="nav__link">Benefícios</a></li>
-        <li><a href="#download" class="btn btn--primary">Baixar App</a></li>
+        <li><a href="https://medsync-olive.vercel.app/" target="_blank" class="btn btn--primary">Acessar o App</a></li>
       </ul>
     </div>
   </nav>
@@ -98,172 +81,54 @@
       </div>
 
       <div class="container hero__container">
-        <!-- Badge -->
-        <div class="hero__badge" data-animate="fade-up" data-delay="0">
-          <span class="hero__badge-dot" aria-hidden="true"></span>
-          <span>Tecnologia em Saúde Digital · 2026</span>
-        </div>
 
-        <!-- Headline -->
-        <h1 class="hero__title" id="hero-heading" data-animate="fade-up" data-delay="100">
-          Conectando paciente,<br>
-          <span class="hero__title-gradient">dados e cuidado</span><br>
-          em tempo real.
-        </h1>
-
-        <!-- Subheadline -->
-        <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
-          MedSync elimina filas físicas, organiza o fluxo de atendimento e coloca o paciente no centro de toda a experiência — com IA, QR Code e notificações em tempo real.
-        </p>
-
-        <!-- CTAs -->
-        <div class="hero__ctas" data-animate="fade-up" data-delay="300">
-          <a href="#download" class="btn btn--primary btn--lg" id="hero-cta-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 16l-4-4h2.5V4h3v8H16l-4 4z" fill="currentColor"/><path d="M5 20h14v-2H5v2z" fill="currentColor"/></svg>
-            Baixar Aplicativo
-          </a>
-          <a href="#how-it-works" class="btn btn--ghost btn--lg" id="hero-cta-secondary">
-            Conhecer Benefícios
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-
-        <!-- Stats bar -->
-        <div class="hero__stats" data-animate="fade-up" data-delay="400">
-          <div class="hero__stat">
-            <span class="hero__stat-value">70<span class="hero__stat-unit">%</span></span>
-            <span class="hero__stat-label">Redução no tempo de espera</span>
+        <!-- Coluna esquerda: texto -->
+        <div class="hero__content" data-animate="fade-up">
+          <div class="hero__badge">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <span>Tecnologia em Saúde Digital · 2026</span>
           </div>
-          <div class="hero__stat-divider" aria-hidden="true"></div>
-          <div class="hero__stat">
-            <span class="hero__stat-value">100<span class="hero__stat-unit">%</span></span>
-            <span class="hero__stat-label">Digital e sem papel</span>
+          <h1 class="hero__title" id="hero-heading">
+            Conectando paciente,<br>
+            <span class="hero__title-gradient">dados e cuidado</span><br>
+            em tempo real.
+          </h1>
+          <p class="hero__subtitle">
+            MedSync elimina filas físicas, organiza o fluxo de atendimento e coloca o paciente no centro de toda a experiência — com IA, QR Code e notificações em tempo real.
+          </p>
+          <div class="hero__ctas">
+            <a href="https://medsync-olive.vercel.app/" target="_blank" class="btn btn--primary btn--lg" id="hero-cta-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 16l-4-4h2.5V4h3v8H16l-4 4z" fill="currentColor"/><path d="M5 20h14v-2H5v2z" fill="currentColor"/></svg>
+              Acessar o App
+            </a>
+            <a href="#how-it-works" class="btn btn--ghost btn--lg" id="hero-cta-secondary">
+              Conhecer Benefícios
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
-          <div class="hero__stat-divider" aria-hidden="true"></div>
-          <div class="hero__stat">
-            <span class="hero__stat-value">24<span class="hero__stat-unit">h</span></span>
-            <span class="hero__stat-label">Monitoramento contínuo</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Phone mockup (fully interactive CSS UI — no static image) -->
-      <div class="hero__mockup" data-animate="fade-left" data-delay="200" aria-hidden="true">
-        <div class="hero__mockup-glow"></div>
-
-        <!-- Floating chips OUTSIDE the phone, positioned relative to mockup wrapper -->
-        <div class="hero__chip hero__chip--1">
-          <span class="hero__chip-dot hero__chip-dot--green"></span>
-          <span>Posição na Fila: <strong id="queue-counter">3</strong></span>
-        </div>
-        <div class="hero__chip hero__chip--2">
-          <span class="hero__chip-dot hero__chip-dot--blue"></span>
-          <span>Notificação enviada</span>
-        </div>
-        <div class="hero__chip hero__chip--3">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.828 5.656-5.657 1.415 1.414L11.003 16z" fill="#10b981"/></svg>
-          <span>Triagem concluída</span>
-        </div>
-
-        <div class="hero__mockup-phone">
-          <div class="phone-ui">
-            <!-- Status bar -->
-            <div class="phone-ui__statusbar">
-              <span>20:15</span>
-              <span class="phone-ui__statusbar-icons">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
-              </span>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-value">70<span class="hero__stat-unit">%</span></span>
+              <span class="hero__stat-label">Redução no tempo de espera</span>
             </div>
-
-            <!-- App header -->
-            <div class="phone-ui__header">
-              <div class="phone-ui__logo">
-                <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#plogo)"/><path d="M16 7v18M7 16h18" stroke="#fff" stroke-width="3" stroke-linecap="round"/><defs><linearGradient id="plogo" x1="0" y1="0" x2="32" y2="32"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#10b981"/></linearGradient></defs></svg>
-                <span>MedSync</span>
-              </div>
-              <div class="phone-ui__notif-bell">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
-                <span class="phone-ui__notif-badge"></span>
-              </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">100<span class="hero__stat-unit">%</span></span>
+              <span class="hero__stat-label">Digital e sem papel</span>
             </div>
-
-            <!-- Greeting -->
-            <div class="phone-ui__greeting">Olá, <strong>João Silva</strong> 👋</div>
-
-            <!-- Queue card -->
-            <div class="phone-ui__queue-card">
-              <div class="phone-ui__queue-top">
-                <div>
-                  <div class="phone-ui__queue-label">Sua posição na fila</div>
-                  <div class="phone-ui__queue-number" id="phone-queue-num">3</div>
-                </div>
-                <div class="phone-ui__queue-ring" id="phone-queue-ring">
-                  <svg viewBox="0 0 36 36">
-                    <circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="3"/>
-                    <circle cx="18" cy="18" r="15" fill="none" stroke="url(#qr)" stroke-width="3"
-                      stroke-dasharray="60 94" stroke-dashoffset="-24" stroke-linecap="round"/>
-                    <defs><linearGradient id="qr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#34d399"/></linearGradient></defs>
-                  </svg>
-                  <span id="phone-queue-pct">72%</span>
-                </div>
-              </div>
-              <div class="phone-ui__queue-bar">
-                <div class="phone-ui__queue-bar-fill" id="phone-bar-fill"></div>
-              </div>
-              <div class="phone-ui__queue-eta">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
-                <span>Tempo estimado: <strong id="phone-eta">~18 min</strong></span>
-              </div>
-            </div>
-
-            <!-- Vitals mini-cards -->
-            <div class="phone-ui__vitals">
-              <div class="phone-ui__vital">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#f87171"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                <span class="phone-ui__vital-label">FC</span>
-                <span class="phone-ui__vital-val" id="phone-hr">78</span>
-                <span class="phone-ui__vital-unit">bpm</span>
-              </div>
-              <div class="phone-ui__vital">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#60a5fa"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c4 0 4-2 8-2s4 2 8 2v-2c-4 0-4-2-8-2-1.13 0-1.9.16-2.53.33C14.15 12 17 9.5 20 9l-3-1z"/></svg>
-                <span class="phone-ui__vital-label">SpO2</span>
-                <span class="phone-ui__vital-val">97</span>
-                <span class="phone-ui__vital-unit">%</span>
-              </div>
-              <div class="phone-ui__vital">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#a78bfa"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
-                <span class="phone-ui__vital-label">PA</span>
-                <span class="phone-ui__vital-val">120</span>
-                <span class="phone-ui__vital-unit">/80</span>
-              </div>
-            </div>
-
-            <!-- Heartbeat canvas -->
-            <div class="phone-ui__ecg">
-              <canvas id="ecg-canvas" height="36"></canvas>
-            </div>
-
-            <!-- Status timeline -->
-            <div class="phone-ui__steps">
-              <div class="phone-ui__step phone-ui__step--done">
-                <div class="phone-ui__step-dot"></div>
-                <span>QR Code lido</span>
-                <span class="phone-ui__step-time">19:48</span>
-              </div>
-              <div class="phone-ui__step phone-ui__step--done">
-                <div class="phone-ui__step-dot"></div>
-                <span>Triagem concluída</span>
-                <span class="phone-ui__step-time">19:52</span>
-              </div>
-              <div class="phone-ui__step phone-ui__step--active">
-                <div class="phone-ui__step-dot"></div>
-                <span>Aguardando atendimento</span>
-                <span class="phone-ui__step-time">Agora</span>
-              </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">24<span class="hero__stat-unit">h</span></span>
+              <span class="hero__stat-label">Monitoramento contínuo</span>
             </div>
           </div>
         </div>
+
+        <!-- Coluna direita: imagem do app -->
+        <div class="hero__mockup" data-animate="fade-left" data-delay="150" aria-hidden="true">
+          <img src="app-mockup.png" alt="MedSync app" class="hero__mockup-img">
+        </div>
+
       </div>
 
       <!-- Scroll indicator -->
@@ -604,7 +469,8 @@
         <div class="cta-final__grid"></div>
       </div>
 
-      <div class="container cta-final__container">
+      <canvas id="cta-canvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0"></canvas>
+      <div class="container cta-final__container" style="position:relative;z-index:1">
 
         <div class="cta-final__content" data-animate="fade-up">
           <div class="cta-final__label">Comece Agora</div>
@@ -618,31 +484,10 @@
 
           <div class="cta-final__ctas">
             <!-- ↓ Edit the href to point to your app store URL -->
-            <a href="https://medsync.app/download" class="btn btn--primary btn--xl" id="final-cta" aria-label="Baixar o aplicativo MedSync">
+            <a href="https://medsync-olive.vercel.app/" target="_blank" class="btn btn--primary btn--xl" id="final-cta" aria-label="Acessar o MedSync">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 16l-4-4h2.5V4h3v8H16l-4 4z" fill="currentColor"/><path d="M5 20h14v-2H5v2z" fill="currentColor"/></svg>
-              Baixar Aplicativo
+              Acessar o App
             </a>
-            <a href="mailto:contato@medsync.app" class="btn btn--ghost btn--xl" id="final-cta-secondary">
-              Falar com Especialista
-            </a>
-          </div>
-
-          <!-- Store badges -->
-          <div class="cta-final__stores" aria-label="Disponível nas lojas">
-            <div class="store-badge" id="badge-ios">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" fill="currentColor"/></svg>
-              <div>
-                <span class="store-badge__small">Disponível na</span>
-                <span class="store-badge__name">App Store</span>
-              </div>
-            </div>
-            <div class="store-badge" id="badge-android">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.523 15.341l1.2-2.079A8.17 8.17 0 0020 9a8 8 0 10-15.993.783C4.17 12.46 5.6 15 8 16.578L6.8 18.659a1 1 0 101.732 1l1.198-2.075C10.54 17.85 11.255 18 12 18s1.46-.15 2.27-.416L15.47 19.66a1 1 0 101.732-1l-1.679-2.319z" fill="currentColor"/></svg>
-              <div>
-                <span class="store-badge__small">Disponível no</span>
-                <span class="store-badge__name">Google Play</span>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -658,10 +503,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#hero" class="nav__logo" aria-label="MedSync Home">
-          <span class="nav__logo-icon" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="url(#footer-logo-grad)"/><path d="M16 7v18M7 16h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="4" fill="url(#footer-logo-grad2)" opacity="0.9"/><defs><linearGradient id="footer-logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#10b981"/></linearGradient><linearGradient id="footer-logo-grad2" x1="12" y1="12" x2="20" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#34d399"/></linearGradient></defs></svg>
-          </span>
-          <span class="nav__logo-text">MedSync</span>
+          <img src="logo.png" alt="MedSync" class="nav__logo-img">
         </a>
         <p class="footer__tagline">Conectando paciente, dados e cuidado em tempo real.</p>
       </div>
