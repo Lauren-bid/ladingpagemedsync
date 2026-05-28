@@ -1194,9 +1194,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero__stats { margin-inline: auto; }
   .hero__mockup {
     order: -1;
-    max-width: 420px;
+    max-width: 380px;
     margin-inline: auto;
   }
+  .hero__mockup-img { max-width: 380px; }
 
   .problem__grid { grid-template-columns: 1fr 1fr; }
   .features__grid { grid-template-columns: repeat(2, 1fr); }
@@ -1226,11 +1227,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .nav__links,
   .btn--nav { display: none; }
   .nav__burger { display: flex; }
+  .nav__logo-img { height: 28px; }
 
   .section-title { font-size: 1.875rem; }
   .section-subtitle { margin-bottom: var(--space-2xl); }
 
   .hero__title { font-size: 2.25rem; }
+  .hero__subtitle { font-size: 1rem; }
   .hero__stats {
     flex-direction: column;
     gap: var(--space-md);
@@ -1240,28 +1243,30 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero__ctas { flex-direction: column; align-items: stretch; }
   .hero__ctas .btn { text-align: center; justify-content: center; }
 
-  .hero__mockup-img { max-width: 320px; }
+  .hero__mockup { display: none; }
 
   .problem__grid { grid-template-columns: 1fr; }
   .problem__transition { flex-direction: column; text-align: center; }
   .problem__transition-line { width: 80%; height: 1px; }
 
-  .features__grid {
-    grid-template-columns: 1fr;
-  }
+  .features__grid { grid-template-columns: 1fr; }
   .feature-card--large,
   .feature-card--wide { grid-column: span 1; }
 
   .compare { gap: var(--space-md); }
 
+  .cta-final__title { font-size: 2rem; }
   .cta-final__ctas { flex-direction: column; align-items: stretch; }
-  .cta-final__ctas .btn { text-align: center; justify-content: center; }
+  .cta-final__ctas .btn { text-align: center; justify-content: center; width: 100%; }
   .cta-final__stores { flex-direction: column; align-items: stretch; }
+
+  /* hide brace canvas on mobile — too small to be legible */
+  #cta-canvas { display: none; }
 
   .footer__inner { flex-direction: column; text-align: center; }
   .footer__brand { text-align: center; }
   .footer__tagline { margin-left: 0; }
-  .footer__links { justify-content: center; }
+  .footer__links { justify-content: center; flex-wrap: wrap; }
 }
 
 /* ── FOCUS / ACCESSIBILITY ───────────────────────────────────── */
